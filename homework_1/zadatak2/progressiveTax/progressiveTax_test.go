@@ -2,6 +2,7 @@ package progressiveTax_test
 
 import (
 	"code-cadets-2021/homework_1/zadatak2/progressiveTax"
+	"fmt"
 	"testing"
 )
 
@@ -11,17 +12,18 @@ func TestGetProgressiveTax(t *testing.T) {
 
 		if tc.expectingError {
 			if actualErr == nil {
-				t.Errorf("Expected an error but not `nil` error")
+				t.Errorf("expected an error but not `nil` error")
 			}
 		} else {
 			if actualErr != nil {
-				t.Errorf("Expected no error but got non-nil error %v:", actualErr)
+				t.Errorf("expected no error but got non-nil error %v", actualErr)
 			}
 		}
 
 		if actualErr == nil {
 			if actualOutput != tc.expectedTax {
-				t.Errorf("Expected output: %.2f. Got %.2f", tc.expectedTax, actualOutput)
+				fmt.Println(tc)
+				t.Errorf("expected output: %.2f. Got %.2f", tc.expectedTax, actualOutput)
 			}
 		}
 	}

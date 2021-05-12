@@ -2,50 +2,37 @@ package progressiveTax
 
 import (
 	"errors"
-	"fmt"
 )
 type TaxBracket struct {
-	MinAmount float32
-	MaxAmount float32 //0 for open ended interval
+	Threshold float32
 	Tax float32 //in percentage form ie 10%
 }
 
 func validateBrackets(taxBrackets []TaxBracket) error {
-	//checking lower and upper bound values
-	if taxBrackets[0].MinAmount != 0 {
-		return errors.New("Invalid first tax bracket. MinAmount has to be 0")
+	//check if first threshold is 0
+	if taxBrackets[0].Threshold != 0 {
+		return errors.New("first threshold must be 0")
 	}
+	for _, bracket := range taxBrackets {
 
-	if taxBrackets[len(taxBrackets)-1].MaxAmount != 0 {
-		return errors.New("Invalid last tax bracket. MaxAmount has to be 0 (open interval)")
-	}
-
-	//checking for invalid brackets
-	for i, bracket := range taxBrackets {
-		if bracket.MaxAmount <= bracket.MinAmount && i != len(taxBrackets)-1{
-			return errors.New(fmt.Sprintf("Invalid tax bracket. %.2f <= %.2f", bracket.MaxAmount, bracket.MinAmount))
+		//check if thresholds are positive
+		if bracket.Threshold < 0 {
+			return errors.New("some thresholds not positive")
 		}
 
-		if bracket.MaxAmount < 0 || bracket.MinAmount < 0 {
-			return errors.New(fmt.Sprintf("Invalid tax bracket. %.2f, %.2f", bracket.MinAmount, bracket.MaxAmount))
-		}
-
+		//check if tax values are positive
 		if bracket.Tax < 0 {
-			return errors.New(fmt.Sprintf("Invalid tax amount. %.2f", bracket.Tax))
+			return errors.New("some tax values not positive")
 		}
 	}
 
-	//checking for intermittent and/or overlapping intervals
-	for i := 0; i < len(taxBrackets)-1; i++ {
-		if taxBrackets[i].MaxAmount > taxBrackets[i+1].MinAmount {
-			return errors.New(fmt.Sprintf("Tax brackets %d and %d are overlapping", i+1, i+2))
-		}
-
-		if taxBrackets[i].MaxAmount < taxBrackets[i+1].MinAmount {
-			return errors.New(fmt.Sprintf("Tax brackets %d and %d are not continious", i+1, i+2))
+	//check if thresholds are in ascending order
+	//also assures there are no duplicates
+	for i := 1; i < len(taxBrackets); i++ {
+		if taxBrackets[i-1].Threshold >= taxBrackets[i].Threshold {
+			return errors.New("tax brackets not in ascending order")
 		}
 	}
-
 	return nil
 }
 
@@ -61,16 +48,17 @@ func GetProgressiveTax(amount float32, taxBrackets []TaxBracket) (float32, error
 
 	var taxAmount float32 = 0.0
 
-	for _, bracket := range taxBrackets {
-		if amount < bracket.MinAmount { //amount is smaller than the bracket range
-			continue
-		}
+	for i := 1; i < len(taxBrackets); i++ {
 
-		if bracket.MaxAmount > 0 && amount > bracket.MaxAmount { //amount is bigger than the bracket range
-			taxAmount += (bracket.MaxAmount - bracket.MinAmount) * (bracket.Tax / 100.0)
+		if amount > taxBrackets[i].Threshold {  //amount gets full tax from bracket
+			taxAmount += (taxBrackets[i].Threshold - taxBrackets[i-1].Threshold) * (taxBrackets[i-1].Tax / 100.0)
 
-		} else if amount >= bracket.MinAmount{ //amount is inside the bracket range (including open ended bracket)
-			taxAmount += (amount - bracket.MinAmount) * (bracket.Tax / 100.0)
+			if i == len(taxBrackets)-1 { //last element is open ended interval. Amount gets taxed the overhead
+				taxAmount += (amount - taxBrackets[i].Threshold) * (taxBrackets[i].Tax / 100.0)
+			}
+
+		} else if amount > taxBrackets[i-1].Threshold { //amount gets partial tax from bracket
+			taxAmount += (amount - taxBrackets[i-1].Threshold) * (taxBrackets[i-1].Tax / 100.0)
 		}
 	}
 

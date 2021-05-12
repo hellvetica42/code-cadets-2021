@@ -13,95 +13,98 @@ type testCase struct {
 func getTestCases() []testCase {
 	var testBracket1 = []progressiveTax.TaxBracket {
 		{
-			MinAmount: 0,
-			MaxAmount: 1000,
+			Threshold: 0,
 			Tax: 0,
 		},
 		{
-			MinAmount: 1000,
-			MaxAmount: 5000,
+			Threshold: 1000,
 			Tax: 10,
 		},
 		{
-			MinAmount: 5000,
-			MaxAmount: 10000,
+			Threshold: 5000,
 			Tax: 20,
 		},
 		{
-			MinAmount: 10000,
-			MaxAmount: 0, //open ended interval
+			Threshold: 10000,
 			Tax: 30,
 		},
 	}
 
 	var testBracket2 = []progressiveTax.TaxBracket {
 		{
-			MinAmount: 0,
-			MaxAmount: 10000,
+			Threshold: 0,
 			Tax: 10,
 		},
 		{
-			MinAmount: 10000,
-			MaxAmount: 20000,
+			Threshold: 10000,
 			Tax: 20,
 		},
 		{
-			MinAmount: 20000,
-			MaxAmount: 0, //open ended interval
+			Threshold: 20000,
 			Tax: 30,
 		},
 	}
 
-	var testIntermittentBracket = []progressiveTax.TaxBracket { //intermittent bracket
+	var testInvalidBracket1 = []progressiveTax.TaxBracket {
 		{
-			MinAmount: 0,
-			MaxAmount: 10000,
+			Threshold: 100,
 			Tax: 10,
 		},
 		{
-			MinAmount: 15000,
-			MaxAmount: 20000,
+			Threshold: 1000,
 			Tax: 20,
 		},
 		{
-			MinAmount: 20000,
-			MaxAmount: 0, //open ended interval
+			Threshold: 3000,
 			Tax: 30,
 		},
 	}
 
-	var testOverlappingBracket = []progressiveTax.TaxBracket { //overlapping bracket
+	var testInvalidBracket2 = []progressiveTax.TaxBracket {
 		{
-			MinAmount: 0,
-			MaxAmount: 10000,
+			Threshold: 0,
 			Tax: 10,
 		},
 		{
-			MinAmount: 10000,
-			MaxAmount: 22000,
+			Threshold: -1000,
 			Tax: 20,
 		},
 		{
-			MinAmount: 20000,
-			MaxAmount: 0, //open ended interval
+			Threshold: 3000,
 			Tax: 30,
 		},
 	}
 
-	var testInvalidRangeBracket = []progressiveTax.TaxBracket {
+	var testInvalidBracket3 = []progressiveTax.TaxBracket {
 		{
-			MinAmount: 100,
-			MaxAmount: 10000,
+			Threshold: 0,
 			Tax: 10,
 		},
 		{
-			MinAmount: 10000,
-			MaxAmount: 22000,
+			Threshold: 3000,
+			Tax: 30,
+		},
+		{
+			Threshold: 1000,
+			Tax: 20,
+		},
+	}
+
+	var testInvalidBracket4 = []progressiveTax.TaxBracket {
+		{
+			Threshold: 0,
+			Tax: 10,
+		},
+		{
+			Threshold: 3000,
+			Tax: 30,
+		},
+		{
+			Threshold: 3000,
 			Tax: 20,
 		},
 		{
-			MinAmount: 20000,
-			MaxAmount: 30000, //open ended interval
+			Threshold: 4000,
 			Tax: 30,
 		},
 	}
@@ -144,19 +147,25 @@ func getTestCases() []testCase {
 			expectingError: true,
 		},
 		{
-			taxBrackets: testOverlappingBracket,
+			taxBrackets: testInvalidBracket1,
 			amount: 1000,
 			expectedTax: 0,
 			expectingError: true,
 		},
 		{
-			taxBrackets: testIntermittentBracket,
+			taxBrackets: testInvalidBracket2,
 			amount: 1000,
 			expectedTax: 0,
 			expectingError: true,
 		},
 		{
-			taxBrackets: testInvalidRangeBracket,
+			taxBrackets: testInvalidBracket3,
+			amount: 1000,
+			expectedTax: 0,
+			expectingError: true,
+		},
+		{
+			taxBrackets: testInvalidBracket4,
 			amount: 1000,
 			expectedTax: 0,
 			expectingError: true,

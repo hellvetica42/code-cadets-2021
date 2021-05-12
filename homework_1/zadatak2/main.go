@@ -8,27 +8,23 @@ import (
 
 func main() {
 
-	//intervals have to be in ascending order, not intermittent and not overlapping
-	//first min amount and last max amount have to be 0
+	//intervals have to be in ascending order
+	//first threshold amount has to be 0
 	var taxBrackets  = []progressiveTax.TaxBracket {
 		{
-			MinAmount: 0,
-			MaxAmount: 1000,
+			Threshold: 0,
 			Tax: 0,
 		},
 		{
-			MinAmount: 1000,
-			MaxAmount: 5000,
+			Threshold: 1000,
 			Tax: 10,
 		},
 		{
-			MinAmount: 5000,
-			MaxAmount: 10000,
+			Threshold: 5000,
 			Tax: 20,
 		},
 		{
-			MinAmount: 10000,
-			MaxAmount: 0, //open ended interval
+			Threshold: 10000,
 			Tax: 30,
 		},
 	}
