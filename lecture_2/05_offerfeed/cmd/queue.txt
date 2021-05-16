@@ -1,0 +1,107 @@
+[
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 0,
+        "Timestamp": "0001-01-01T00:00:00Z"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 0,
+        "Timestamp": "0001-01-01T00:00:00Z"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 0,
+        "Timestamp": "0001-01-01T00:00:00Z"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 0,
+        "Timestamp": "0001-01-01T00:00:00Z"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 0,
+        "Timestamp": "0001-01-01T00:00:00Z"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 0,
+        "Timestamp": "0001-01-01T00:00:00Z"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 0,
+        "Timestamp": "0001-01-01T00:00:00Z"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 0,
+        "Timestamp": "0001-01-01T00:00:00Z"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 0,
+        "Timestamp": "0001-01-01T00:00:00Z"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 0,
+        "Timestamp": "0001-01-01T00:00:00Z"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 0,
+        "Timestamp": "0001-01-01T00:00:00Z"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 0,
+        "Timestamp": "0001-01-01T00:00:00Z"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 0,
+        "Timestamp": "0001-01-01T00:00:00Z"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 0,
+        "Timestamp": "0001-01-01T00:00:00Z"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 0,
+        "Timestamp": "0001-01-01T00:00:00Z"
+    }
+]

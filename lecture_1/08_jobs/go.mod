@@ -1,6 +1,6 @@
-module code-cadets-2021/lecture_2/05_offerfeed
+module code-cadets-2021/lecture_1/08_jobs
 
-go 1.16
+go 1.15
 
 require (
 	github.com/pkg/errors v0.9.1

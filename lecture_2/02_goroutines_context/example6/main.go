@@ -18,7 +18,8 @@ func main() {
 		fmt.Println("separate goroutine done", time.Since(t))
 	}()
 
-	// cancel()
+
+	//cancel()
 	fmt.Println("main goroutine sleeping")
 	time.Sleep(time.Second * 5)
 	fmt.Println("main goroutine wake up")

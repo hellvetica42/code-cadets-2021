@@ -2,7 +2,11 @@ package http
 
 import (
 	"context"
+	"encoding/json"
+	"github.com/pkg/errors"
+	"io/ioutil"
 	"net/http"
+	"time"
 
 	"code-cadets-2021/lecture_2/05_offerfeed/internal/domain/models"
 )
@@ -24,10 +28,45 @@ func NewAxilisOfferFeed(
 }
 
 func (a *AxilisOfferFeed) Start(ctx context.Context) error {
+	defer close(a.updates)
 	// repeatedly:
-	// - get odds from HTTP server
-	// - write them to updates channel
-	// - if context is finished, exit and close updates channel
+	for {
+		// - get odds from HTTP server
+		httpResponse, err := a.httpClient.Get(axilisFeedURL)
+		if err != nil {
+			return errors.New("error getting axilisFeedURL")
+		}
+
+		bodyContent, err := ioutil.ReadAll(httpResponse.Body)
+		if err != nil {
+			return errors.New("error reading http response")
+		}
+
+		var offers []axilisOfferOdd
+		err = json.Unmarshal(bodyContent, &offers)
+		if err != nil {
+			return errors.New("error parsing json")
+		}
+
+		// - write them to updates channel
+		for _, offerOdd := range offers {
+			a.updates <- models.Odd{
+				Id:          offerOdd.Id,
+				Name:        offerOdd.Name,
+				Match:       offerOdd.Match,
+				Coefficient: 0,
+				Timestamp:   time.Time{},
+			}
+		}
+
+		// - if context is finished, exit and close updates channel
+		select {
+			case <-ctx.Done():
+				return nil
+
+			case <-time.After(time.Second*3):
+		}
+	}
 	// (test your program from cmd/main.go)
 	return nil
 }
