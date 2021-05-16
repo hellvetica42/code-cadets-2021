@@ -1,11 +1,11 @@
 package queue
 
 import (
+	"code-cadets-2021/lecture_2/05_offerfeed/internal/domain/models"
 	"context"
 	"encoding/json"
+	"fmt"
 	"os"
-
-	"code-cadets-2021/lecture_2/05_offerfeed/internal/domain/models"
 
 	"github.com/pkg/errors"
 )
@@ -17,7 +17,7 @@ type OrderedQueue struct {
 
 func NewOrderedQueue() *OrderedQueue {
 	return &OrderedQueue{
-		source: make(chan models.Odd, 10),
+		source: make(chan models.Odd),
 	}
 }
 
@@ -26,14 +26,27 @@ func (o *OrderedQueue) Start(ctx context.Context) error {
 
 	// initially:
 	// - load existing data from disk
+	err := o.loadFromFile()
+	if err != nil {
+		return err
+	}
 	//
 	// repeatedly:
 	// - read source channel
-	// - update queue slice
+	for value := range o.source {
+		// - update queue slice
+		o.queue = append(o.queue, value)
+		fmt.Println(value)
+	}
 	// - when source channel is closed, exit
 	//
 	// finally:
 	// - store queue slice to disk
+	err = o.storeToFile()
+	if err != nil {
+		return err
+	}
+
 	return nil
 }
 

@@ -29,7 +29,7 @@ func main() {
 		ch <- i
 	}
 
-	// close(ch)
+	close(ch)
 
 	// range iteration
 	for x := range ch {
@@ -60,5 +60,5 @@ func main() {
 	v4, ok4 := <-ch2
 	fmt.Println(v4, ok4)
 
-	// close(ch2)
+	//close(ch2)
 }

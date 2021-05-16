@@ -1,0 +1,4 @@
+Sven - Java Football Programming 
+Luka - Go Java Linux 
+Vedran - Lecturing Go Core 
+Sergej - Dishwashing Activism Go Docker 
