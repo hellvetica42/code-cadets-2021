@@ -3,36 +3,52 @@ package services
 import (
 	"context"
 	"log"
+	"sync"
 
 	"code-cadets-2021/lecture_2/06_offerfeed/internal/domain/models"
 )
 
 type FeedProcessorService struct {
-	feed  Feed
+	feeds  []Feed
 	queue Queue
 }
 
 func NewFeedProcessorService(
-	feed Feed,
+	feeds []Feed,
 	queue Queue,
 ) *FeedProcessorService {
 	return &FeedProcessorService{
-		feed:  feed,
+		feeds:  feeds,
 		queue: queue,
 	}
 }
 
 func (f *FeedProcessorService) Start(ctx context.Context) error {
-	updates := f.feed.GetUpdates()
+	var updates []chan models.Odd
+
+	for _, feed := range f.feeds {
+		updates = append(updates, feed.GetUpdates())
+	}
 	source := f.queue.GetSource()
 
 	defer close(source)
 	defer log.Printf("shutting down %s", f)
 
-	for update := range updates {
-		update.Coefficient *= 2
-		source <- update
+	wg := &sync.WaitGroup{}
+	wg.Add(len(updates))
+
+	for _, ch := range updates {
+		go func(c chan models.Odd) {
+			defer wg.Done()
+
+			for update := range c {
+				update.Coefficient *= 2
+				source <- update
+			}
+		}(ch)
 	}
+
+	wg.Wait()
 
 	return nil
 }
