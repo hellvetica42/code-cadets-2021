@@ -13,7 +13,7 @@ func main() {
 	// Running from Goland directly may cause incorrect behaviour.
 
 	log.Println("If exists, dropping existing calc_bets database...")
-	os.Remove("../../db/calc_bets.db")
+	//os.Remove("../../db/calc_bets.db")
 
 	log.Println("Creating calc_bets database...")
 	file, err := os.Create("../../db/calc_bets.db")
