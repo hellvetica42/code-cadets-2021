@@ -1,0 +1,254 @@
+[
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 4.4,
+        "Timestamp": "2021-05-19T20:06:27.4745827+02:00"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 2.6,
+        "Timestamp": "2021-05-19T20:06:27.474589+02:00"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 6.5,
+        "Timestamp": "2021-05-19T20:06:27.474593+02:00"
+    },
+    {
+        "Id": "IdW",
+        "Name": "Dinamo Wins",
+        "Match": "Dinamo - Hajduk",
+        "Coefficient": 3.4,
+        "Timestamp": "2021-05-19T20:06:27.4747119+02:00"
+    },
+    {
+        "Id": "IdY",
+        "Name": "Correct score - 121:113",
+        "Match": "Lakers - Miami",
+        "Coefficient": 43,
+        "Timestamp": "2021-05-19T20:06:27.4747133+02:00"
+    },
+    {
+        "Id": "IdX",
+        "Name": "Ronaldo top scorer",
+        "Match": "Champions League",
+        "Coefficient": 6.2,
+        "Timestamp": "2021-05-19T20:06:27.4747145+02:00"
+    },
+    {
+        "Id": "IdW",
+        "Name": "Dinamo Wins",
+        "Match": "Dinamo - Hajduk",
+        "Coefficient": 3.4,
+        "Timestamp": "2021-05-19T20:06:30.4960881+02:00"
+    },
+    {
+        "Id": "IdY",
+        "Name": "Correct score - 121:113",
+        "Match": "Lakers - Miami",
+        "Coefficient": 43,
+        "Timestamp": "2021-05-19T20:06:30.49609+02:00"
+    },
+    {
+        "Id": "IdX",
+        "Name": "Ronaldo top scorer",
+        "Match": "Champions League",
+        "Coefficient": 6.2,
+        "Timestamp": "2021-05-19T20:06:30.4961039+02:00"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 4.4,
+        "Timestamp": "2021-05-19T20:06:30.4962328+02:00"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 2.6,
+        "Timestamp": "2021-05-19T20:06:30.4962346+02:00"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 6.5,
+        "Timestamp": "2021-05-19T20:06:30.4962367+02:00"
+    },
+    {
+        "Id": "IdW",
+        "Name": "Dinamo Wins",
+        "Match": "Dinamo - Hajduk",
+        "Coefficient": 3.4,
+        "Timestamp": "2021-05-19T20:06:33.5168318+02:00"
+    },
+    {
+        "Id": "IdY",
+        "Name": "Correct score - 121:113",
+        "Match": "Lakers - Miami",
+        "Coefficient": 43,
+        "Timestamp": "2021-05-19T20:06:33.5168344+02:00"
+    },
+    {
+        "Id": "IdX",
+        "Name": "Ronaldo top scorer",
+        "Match": "Champions League",
+        "Coefficient": 6.2,
+        "Timestamp": "2021-05-19T20:06:33.5168414+02:00"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 4.4,
+        "Timestamp": "2021-05-19T20:06:33.5170749+02:00"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 2.6,
+        "Timestamp": "2021-05-19T20:06:33.517081+02:00"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 6.5,
+        "Timestamp": "2021-05-19T20:06:33.5170865+02:00"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 4.4,
+        "Timestamp": "2021-05-19T20:06:36.5378681+02:00"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 2.6,
+        "Timestamp": "2021-05-19T20:06:36.5378734+02:00"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 6.5,
+        "Timestamp": "2021-05-19T20:06:36.5378771+02:00"
+    },
+    {
+        "Id": "IdW",
+        "Name": "Dinamo Wins",
+        "Match": "Dinamo - Hajduk",
+        "Coefficient": 3.4,
+        "Timestamp": "2021-05-19T20:06:36.5380732+02:00"
+    },
+    {
+        "Id": "IdY",
+        "Name": "Correct score - 121:113",
+        "Match": "Lakers - Miami",
+        "Coefficient": 43,
+        "Timestamp": "2021-05-19T20:06:36.5380747+02:00"
+    },
+    {
+        "Id": "IdX",
+        "Name": "Ronaldo top scorer",
+        "Match": "Champions League",
+        "Coefficient": 6.2,
+        "Timestamp": "2021-05-19T20:06:36.5380761+02:00"
+    },
+    {
+        "Id": "IdW",
+        "Name": "Dinamo Wins",
+        "Match": "Dinamo - Hajduk",
+        "Coefficient": 3.4,
+        "Timestamp": "2021-05-19T20:06:39.5598559+02:00"
+    },
+    {
+        "Id": "IdY",
+        "Name": "Correct score - 121:113",
+        "Match": "Lakers - Miami",
+        "Coefficient": 43,
+        "Timestamp": "2021-05-19T20:06:39.5598577+02:00"
+    },
+    {
+        "Id": "IdX",
+        "Name": "Ronaldo top scorer",
+        "Match": "Champions League",
+        "Coefficient": 6.2,
+        "Timestamp": "2021-05-19T20:06:39.5598596+02:00"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 4.4,
+        "Timestamp": "2021-05-19T20:06:39.5599036+02:00"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 2.6,
+        "Timestamp": "2021-05-19T20:06:39.5599107+02:00"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 6.5,
+        "Timestamp": "2021-05-19T20:06:39.5599142+02:00"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 4.4,
+        "Timestamp": "2021-05-19T20:06:42.5815133+02:00"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 2.6,
+        "Timestamp": "2021-05-19T20:06:42.581516+02:00"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 6.5,
+        "Timestamp": "2021-05-19T20:06:42.5815194+02:00"
+    },
+    {
+        "Id": "IdW",
+        "Name": "Dinamo Wins",
+        "Match": "Dinamo - Hajduk",
+        "Coefficient": 3.4,
+        "Timestamp": "2021-05-19T20:06:42.581559+02:00"
+    },
+    {
+        "Id": "IdY",
+        "Name": "Correct score - 121:113",
+        "Match": "Lakers - Miami",
+        "Coefficient": 43,
+        "Timestamp": "2021-05-19T20:06:42.581561+02:00"
+    },
+    {
+        "Id": "IdX",
+        "Name": "Ronaldo top scorer",
+        "Match": "Champions League",
+        "Coefficient": 6.2,
+        "Timestamp": "2021-05-19T20:06:42.581563+02:00"
+    }
+]
