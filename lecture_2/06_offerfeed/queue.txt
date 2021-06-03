@@ -1,0 +1,317 @@
+[
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 4.4,
+        "Timestamp": "2021-05-17T00:56:40.7695872+02:00"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 2.6,
+        "Timestamp": "2021-05-17T00:56:40.7695872+02:00"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 6.5,
+        "Timestamp": "2021-05-17T00:56:40.7695872+02:00"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 4.4,
+        "Timestamp": "2021-05-17T00:56:43.7932732+02:00"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 2.6,
+        "Timestamp": "2021-05-17T00:56:43.7932732+02:00"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 6.5,
+        "Timestamp": "2021-05-17T00:56:43.7932732+02:00"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 4.4,
+        "Timestamp": "2021-05-17T00:56:46.8257304+02:00"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 2.6,
+        "Timestamp": "2021-05-17T00:56:46.8257304+02:00"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 6.5,
+        "Timestamp": "2021-05-17T00:56:46.8257304+02:00"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 4.4,
+        "Timestamp": "2021-05-17T00:56:49.8557582+02:00"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 2.6,
+        "Timestamp": "2021-05-17T00:56:49.8557719+02:00"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 6.5,
+        "Timestamp": "2021-05-17T00:56:49.8557719+02:00"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 4.4,
+        "Timestamp": "2021-05-17T00:56:52.8906265+02:00"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 2.6,
+        "Timestamp": "2021-05-17T00:56:52.8906265+02:00"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 6.5,
+        "Timestamp": "2021-05-17T00:56:52.8906265+02:00"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 4.4,
+        "Timestamp": "2021-05-17T00:56:55.9137376+02:00"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 2.6,
+        "Timestamp": "2021-05-17T00:56:55.9137376+02:00"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 6.5,
+        "Timestamp": "2021-05-17T00:56:55.9137376+02:00"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 4.4,
+        "Timestamp": "2021-05-19T19:59:51.6660204+02:00"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 2.6,
+        "Timestamp": "2021-05-19T19:59:51.6660204+02:00"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 6.5,
+        "Timestamp": "2021-05-19T19:59:51.6660204+02:00"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 4.4,
+        "Timestamp": "2021-05-19T19:59:54.7006462+02:00"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 2.6,
+        "Timestamp": "2021-05-19T19:59:54.7006462+02:00"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 6.5,
+        "Timestamp": "2021-05-19T19:59:54.7006462+02:00"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 4.4,
+        "Timestamp": "2021-05-19T19:59:57.7292791+02:00"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 2.6,
+        "Timestamp": "2021-05-19T19:59:57.7292791+02:00"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 6.5,
+        "Timestamp": "2021-05-19T19:59:57.7292791+02:00"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 4.4,
+        "Timestamp": "2021-05-19T20:00:00.7595375+02:00"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 2.6,
+        "Timestamp": "2021-05-19T20:00:00.7595375+02:00"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 6.5,
+        "Timestamp": "2021-05-19T20:00:00.7595375+02:00"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 4.4,
+        "Timestamp": "2021-05-19T20:00:03.7939094+02:00"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 2.6,
+        "Timestamp": "2021-05-19T20:00:03.7939256+02:00"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 6.5,
+        "Timestamp": "2021-05-19T20:00:03.7939256+02:00"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 4.4,
+        "Timestamp": "2021-05-19T20:00:06.8242135+02:00"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 2.6,
+        "Timestamp": "2021-05-19T20:00:06.8242135+02:00"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 6.5,
+        "Timestamp": "2021-05-19T20:00:06.8242135+02:00"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 4.4,
+        "Timestamp": "2021-05-19T20:00:09.8581248+02:00"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 2.6,
+        "Timestamp": "2021-05-19T20:00:09.8581248+02:00"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 6.5,
+        "Timestamp": "2021-05-19T20:00:09.8581248+02:00"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 4.4,
+        "Timestamp": "2021-05-19T20:00:12.8893754+02:00"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 2.6,
+        "Timestamp": "2021-05-19T20:00:12.8893888+02:00"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 6.5,
+        "Timestamp": "2021-05-19T20:00:12.8893888+02:00"
+    },
+    {
+        "Id": "OddId1",
+        "Name": "Barcelona Wins",
+        "Match": "Barcelona - Real",
+        "Coefficient": 4.4,
+        "Timestamp": "2021-05-19T20:00:15.9197643+02:00"
+    },
+    {
+        "Id": "OddId2",
+        "Name": "Correct score, 3:0",
+        "Match": "Dinamo Z. - Rijeka",
+        "Coefficient": 2.6,
+        "Timestamp": "2021-05-19T20:00:15.9197643+02:00"
+    },
+    {
+        "Id": "OddId3",
+        "Name": "Shiffrin top 3 places",
+        "Match": "Slalom, Are",
+        "Coefficient": 6.5,
+        "Timestamp": "2021-05-19T20:00:15.9197643+02:00"
+    }
+]
